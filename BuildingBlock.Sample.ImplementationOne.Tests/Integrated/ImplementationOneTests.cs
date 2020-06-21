@@ -15,7 +15,7 @@ namespace BuildingBlock.Sample.ImplementationOne.Tests
 
             services.AddSampleImplementationOne(setup =>
             {
-                setup.OptionOne = "OptionOne";
+                setup.SomeConfigParam = "OptionOne";
             });
 
             var serviceProvider = services.BuildServiceProvider();

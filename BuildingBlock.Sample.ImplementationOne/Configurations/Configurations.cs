@@ -1,10 +1,15 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using BuildingBlock.Sample.Configurations;
+
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 using System;
 
 namespace BuildingBlock.Sample.ImplementationOne.Configurations
 {
+    /// <summary>
+    /// Adds dependency injection and handles the correct component configuration.
+    /// </summary>
     public static class Configurations
     {
         public static IImplementationOneBuilder AddSampleImplementationOne(this IServiceCollection services, Action<ImplementationOneOptions> options)

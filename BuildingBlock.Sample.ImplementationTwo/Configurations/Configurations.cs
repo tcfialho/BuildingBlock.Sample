@@ -5,6 +5,9 @@ using System;
 
 namespace BuildingBlock.Sample.ImplementationTwo.Configurations
 {
+    /// <summary>
+    /// Adds dependency injection and handles the correct component configuration.
+    /// </summary>
     public static class Configurations
     {
         public static IImplementationTwoBuilder AddSampleImplementationTwo(this IServiceCollection services, Action<ImplementationTwoOptions> options)

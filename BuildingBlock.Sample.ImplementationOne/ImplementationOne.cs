@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace BuildingBlock.Sample.ImplementationOne
 {
+    /// <summary>
+    /// An implementation for the component contract.
+    /// Must be used by dependency injection of ISample.
+    /// </summary>
     public class ImplementationOne : ISample
     {
         private readonly ImplementationOneOptions _options;

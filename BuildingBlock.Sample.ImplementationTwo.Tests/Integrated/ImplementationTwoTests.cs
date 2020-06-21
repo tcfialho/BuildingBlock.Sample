@@ -1,8 +1,9 @@
 using Microsoft.Extensions.DependencyInjection;
+using BuildingBlock.Sample.ImplementationTwo.Configurations;
 
 using Xunit;
 
-namespace BuildingBlock.Sample.ImplementationOne.Tests
+namespace BuildingBlock.Sample.ImplementationTwo.Tests
 {
     public class ImplementationTwoTests
     {
@@ -13,7 +14,7 @@ namespace BuildingBlock.Sample.ImplementationOne.Tests
 
             services.AddSampleImplementationTwo(setup =>
             {
-                setup.OptionOne = "OptionOne";
+                setup.OtherConfigParam = "OptionOne";
             });
 
             var serviceProvider = services.BuildServiceProvider();

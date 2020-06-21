@@ -4,6 +4,9 @@ using System;
 
 namespace BuildingBlock.Sample.Configurations
 {
+    /// <summary>
+    /// Base class for builder.
+    /// </summary>
     public abstract class SampleBuilderBase : ISampleBuilder
     {
         public IServiceCollection Services { get; }
@@ -14,6 +17,7 @@ namespace BuildingBlock.Sample.Configurations
             {
                 throw new ArgumentNullException(nameof(services));
             }
+
             Services = services;
         }
     }
